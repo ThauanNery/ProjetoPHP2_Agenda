@@ -7,7 +7,7 @@
             <p id="msg"><?= $printMsg ?></p>
         <?php endif; ?>
 
-        <h1 id="main_title">Agenda</h1>
+        <h1 id="main-title">Agenda</h1>
         
         <?php if(count($contacts) > 0 ): ?>
             <table class="table" id="contacts-table">
@@ -29,7 +29,7 @@
                             <td scoope="row"><?= $contact["email"] ?></td>
                             <td class="acoes">
                                 <a href="<?= $BASE_URL ?>detail.php?id=<?= $contact["id"] ?>"><i class="fas fa-eye check-icon"></i></a>
-                                <a href="#"><i class="far fa-edit edit-icon"></i></a>
+                                <a href="<?= $BASE_URL ?>edit.php?id=<?= $contact["id"] ?>"><i class="far fa-edit edit-icon"></i></a>
                                 <button type="submit" class="deleteBtn"><i class="fas fa-times delete-icon"></i></button>
                             </td>
                         </tr>
