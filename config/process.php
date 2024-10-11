@@ -70,6 +70,28 @@
                 }
 
             }
+            else if($data["type"] === "delete")
+            {
+                $id = $data["id"];
+
+                $query = "DELETE FROM contatos WHERE id = :id";
+
+                $stmt = $conn->prepare($query);
+
+                $stmt->bindParam(":id", $id);
+
+                try
+                {
+                   $stmt->execute();
+                   $_SESSION["msg"] = "Contato removido!";
+                }
+                catch(PDOException $e)
+                {
+                    //ERRO NA CONEXAO
+                    $error = $e->getMessage();
+                    echo "Erro: $error";
+                }
+            }
 
         //REDIRECIONADO PARA HOME
         header("location:" . $BASE_URL ."../index.php");

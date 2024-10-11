@@ -41,6 +41,10 @@
     color: #007bff;
 }
 
+.delete-form{
+    display: inline-block;
+}
+
 .delete-icon{
     color: #bd2130;
 }
@@ -84,7 +88,7 @@
 }
 
 #back-link{
-    border: 1-x solid #007bff;
+    border: 1px solid #007bff;
     color: #007bff;
     border-radius: 4px;
     padding: 5px;
@@ -101,6 +105,7 @@
     max-width: 500px;
     margin: 0 auto;
 }
+
 
 /*MOBILE*/
 
