@@ -13,7 +13,6 @@
             <table class="table" id="contacts-table">
                 <thead>
                     <tr>
-                        <th scoope="col">#</th>
                         <th scoope="col">Nome</th>
                         <th scoope="col">Telefone</th>
                         <th scoope="col">E-mail</th>
@@ -23,7 +22,7 @@
                 <tbody>
                     <?php foreach($contacts as $contact) : ?>
                         <tr>
-                            <td scoope="row" class="col-id"><?= $contact["id"] ?></td>
+                            <input type="hidden" name="contact_id[]" value="<?= $contact['id'] ?>">
                             <td scoope="row"><?= $contact["nome"] ?></td>
                             <td scoope="row"><?= $contact["celular"] ?></td>
                             <td scoope="row"><?= $contact["email"] ?></td>

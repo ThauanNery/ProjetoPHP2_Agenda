@@ -60,6 +60,31 @@
     text-align: center;
 }
 
+/* Ajuste para o contêiner DataTables */
+.dataTables_wrapper {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+/* Centraliza a paginação abaixo da tabela */
+.dataTables_paginate {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px;        
+}
+
+/* Estilo opcional para os botões de paginação */
+.dataTables_paginate .paginate_button {
+    margin: 0 5px; 
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;    
+    border-radius: 5px;       
+}
+
+.dataTables_paginate .paginate_button:hover {
+    background-color: #e0e0e0; 
+}
 #msg{
     color: #155724;
     background-color: #d4edda;
