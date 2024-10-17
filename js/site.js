@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     let table = new DataTable('#contacts-table', {
         "ordering": true,
         "paging": true,
@@ -31,4 +32,6 @@ $(document).ready(function() {
             }
         }
     });
+
+    $('#celular').mask('(00) 00000-0000'); // Aplica a máscara com jQuery Mask Plugin
 });

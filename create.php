@@ -13,7 +13,7 @@
       </div>
       <div class="form-group">
         <label for="celular">Telefone</label>
-        <input type="number" class="form-control" name="celular" id="celular" placeholder="Digite o número para contato" required>
+        <input type="tel" class="form-control" name="celular" id="celular" placeholder="(XX) XXXXX-XXXX" required>
       </div>
       <div class="form-group">
         <label for="emailInput">E-mail</label>

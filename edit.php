@@ -14,7 +14,7 @@
       </div>
       <div class="form-group">
         <label for="celular">Telefone</label>
-        <input type="number" class="form-control" name="celular" id="celular" value="<?= $contact['celular'] ?>" required>
+        <input type="text" class="form-control" name="celular" id="celular" value="<?= $contact['celular'] ?>" required>
       </div>
       <div class="form-group">
         <label for="emailInput">E-mail</label>

@@ -24,7 +24,7 @@
                         <tr>
                             <input type="hidden" name="contact_id[]" value="<?= $contact['id'] ?>">
                             <td scoope="row"><?= $contact["nome"] ?></td>
-                            <td scoope="row"><?= $contact["celular"] ?></td>
+                            <td id="celular" scoope="row"><?= $contact["celular"] ?></td>
                             <td scoope="row"><?= $contact["email"] ?></td>
                             <td class="acoes">
                                 <a href="<?= $BASE_URL ?>detail.php?id=<?= $contact["id"] ?>"><i class="fas fa-eye check-icon"></i></a>

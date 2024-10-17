@@ -8,8 +8,8 @@
 
     <div class="form-group" style="display: flex; justify-content: space-between;">
         <div style="flex: 1; margin-right: 10px;">
-            <label for="telefone" class="bold">Telefone:</label>
-            <input type="text" id="telefone" name="telefone" value="<?= htmlspecialchars($contact["celular"]) ?>" readonly style="width: 100%;">
+            <label for="celular" class="bold">Telefone:</label>
+            <input type="text" id="celular" name="celular" value="<?= htmlspecialchars($contact["celular"]) ?>" readonly style="width: 100%;">
         </div>
 
         <div style="flex: 1; margin-left: 10px;">

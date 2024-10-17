@@ -26,7 +26,8 @@
 
 .acoes{
     text-align: right;
-    width: 150px;
+    width: 150px;   
+    text-align: center;
 }
 
 .acoes i{
