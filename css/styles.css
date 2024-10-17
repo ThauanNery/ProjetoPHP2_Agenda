@@ -108,22 +108,30 @@
     font-weight: bold;
 }
 
-#back-link-container{
-    display: block;
-    width: 500px;
-    margin: 30px auto 0;
+.button-container {
+    display: flex; 
+    gap: 10px;
+    align-items: center; 
 }
 
-#back-link{
+#back-link-container {
+    display: inline-block; 
+    margin: 0; 
+}
+
+#back-link {
     border: 1px solid #007bff;
     color: #007bff;
     border-radius: 4px;
-    padding: 5px;
+    padding: 5px 10px; 
+    text-decoration: none;
+    display: inline-block; 
 }
 
-#back-link:hover{
-    text-decoration: none;
+#back-link:hover {
+    text-decoration: none; 
 }
+
 
 /*CREATE*/
 
@@ -132,6 +140,9 @@
     max-width: 500px;
     margin: 0 auto;
 }
+
+
+
 
 
 /*MOBILE*/

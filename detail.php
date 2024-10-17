@@ -3,9 +3,8 @@
 ?>
 
 <div class="container" id="view-contact-container">
-    <?php include_once("templates/backbtn.php"); ?>
+   
     <h1 id="main-title"><?= htmlspecialchars($contact["nome"]) ?></h1>
-
     <div class="form-group" style="display: flex; justify-content: space-between;">
         <div style="flex: 1; margin-right: 10px;">
             <label for="celular" class="bold">Telefone:</label>
@@ -21,6 +20,7 @@
      <div class="form-group">
         <label for="observacoes" class="bold">Observações:</label>
         <textarea id="observacoes" name="observacoes" readonly style="width: 100%; height: 150px; resize: none;"><?= htmlspecialchars($contact["observacao"]) ?></textarea>
+        <?php include_once("templates/backbtn.php"); ?>
     </div>
 </div>
 

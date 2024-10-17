@@ -3,7 +3,6 @@
 ?>
 
   <div class="container">
-    <?php include_once("templates/backbtn.php"); ?>
     <h1 id="main-title">Editar Contato</h1>
     <form id="edit-form" action="<?=$BASE_URL?>config/process.php" method="POST">
       <input type="hidden" name="type" value="edit">
@@ -24,7 +23,10 @@
         <label for="observacao">Observações</label>
         <textarea type="text" class="form-control" name="observacao" id="observacao" rows="3"><?= $contact['observacao'] ?></textarea>
       </div>      
-      <button type="submit" class="btn btn-primary">Cadastrar</button>
+      <div class="button-container">
+          <button type="submit" class="btn btn-primary">Salvar</button>
+          <?php include_once("templates/backbtn.php"); ?>
+      </div>
     </form>
   </div>
 
